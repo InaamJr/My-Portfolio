@@ -9,6 +9,10 @@ export default [
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
+      env: {
+        browser: true,
+        node: true,
+      },
       ecmaVersion: 2020,
       globals: globals.browser,
       parserOptions: {
