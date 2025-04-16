@@ -72,7 +72,7 @@ const Hero = () => {
                     isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
                     }`}>
                     {/* Glow effects */}
-                    <div className="absolute inset-8 md:inset-20 bg-sky-300 rounded-full blur-3xl z-2" />
+                    {/* <div className="absolute inset-8 md:inset-20 bg-sky-300 rounded-full blur-3xl z-2" /> */}
 
                     {/* Animated dashed circles */}
                     {/* <div className="absolute inset-2 -mt-6 md:-mt-10 rounded-full border-2 border-dashed border-sky-400 animate-spin-regular" />
@@ -82,16 +82,16 @@ const Hero = () => {
                     {/* <div className="absolute inset-8 md:inset-10 bg-sky-200 rounded-full blur-3xl z-0" /> */}
 
                     {/* Image */}
-                    <div className="hidden lg:block">
+                    {/* <div className="hidden lg:block">
                         <img 
                             src="/images/hero-banner1.png" 
                             // width={656}
                             // height={800}
                             className="relative z-10 w-[250px] h-[250px] md:w-[500px] md:h-[500px] mx-auto object-contain drop-shadow-2xl rounded-full -mt-5"
                         />
-                    </div>
+                    </div> */}
 
-                    <div className="absolute inset-8 md:inset-10 bg-sky-200 rounded-full blur-3xl z-1" />
+                    {/* <div className="absolute inset-8 md:inset-10 bg-sky-200 rounded-full blur-3xl z-1" /> */}
                 </div>
             </div>
         </section>
