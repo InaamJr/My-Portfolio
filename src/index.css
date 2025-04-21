@@ -189,6 +189,18 @@ body {
 }
 
 
+/* 3D Animation */
+.three-d-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(56, 189, 248, 0.2); /* sky-400 with opacity */
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: -1;
+}
+
+
 @layer utilities {
     @keyframes blink {
         0%, 100% {
