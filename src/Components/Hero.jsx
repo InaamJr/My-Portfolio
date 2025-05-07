@@ -74,15 +74,19 @@ const Hero = () => {
                 <div className={`hidden lg:block transform transition-all duration-700 delay-200 relative w-[300px] h-[300px] md:w-[500px] md:h-[500px] justify-self-center md:justify-self-end mt-8 md:mt-0 ${
                     isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
                     }`}>
-                        <div className="relative w-full h-full">
-                            {/* Glow effect BEHIND image */}
-                            <div className="absolute inset-8 md:inset-20 bg-sky-200 rounded-full blur-3xl z-0" />
+                        <div className={`hidden lg:block transform transition-all duration-700 delay-200 relative w-[300px] h-[300px] md:w-[500px] md:h-[500px] justify-self-center md:justify-self-end mt-8 md:mt-0 ${
+                            isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
+                        }`}>
+                            <div className="relative w-full h-full">
+                                {/* Glow effect - behind image */}
+                                <div className="absolute inset-60 bg-sky-300 rounded-full blur-[100px] opacity-40 z-0" />
 
-                            {/* Foreground TiltCard image */}
-                            <TiltCard 
-                                image={ActionFigure} 
-                                className="relative z-10"
-                            />
+                                {/* Foreground TiltCard image */}
+                                <TiltCard 
+                                    image={ActionFigure} 
+                                    className="relative z-10"
+                                />
+                            </div>
                         </div>
                         
                         {/* Glow effects */}
