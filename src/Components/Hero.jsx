@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react";
 import { ButtonPrimary, ButtonOutline } from "./Button";
 import TiltCard from './TiltCard';
-import ActionFigure from '/images/ActionFig.png';
+import ActionFigure from '/images/ActionFig1.2.png';
 // import ThreeDCard from "./ThreeDCard";
 
 const Hero = () => {
@@ -74,8 +74,19 @@ const Hero = () => {
                 <div className={`hidden lg:block transform transition-all duration-700 delay-200 relative w-[300px] h-[300px] md:w-[500px] md:h-[500px] justify-self-center md:justify-self-end mt-8 md:mt-0 ${
                     isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
                     }`}>
+                        <div className="relative w-full h-full">
+                            {/* Glow effect BEHIND image */}
+                            <div className="absolute inset-8 md:inset-20 bg-sky-200 rounded-full blur-3xl z-0" />
+
+                            {/* Foreground TiltCard image */}
+                            <TiltCard 
+                                image={ActionFigure} 
+                                className="relative z-10"
+                            />
+                        </div>
+                        
                         {/* Glow effects */}
-                        <div className="absolute inset-8 md:inset-20 bg-sky-200 rounded-full blur-3xl z-2" />
+                        {/* <div className="absolute inset-8 md:inset-20 bg-sky-200 rounded-full blur-3xl z-0" /> */}
 
                         {/* Animated dashed circles */}
                         {/* <div className="absolute inset-2 -mt-6 md:-mt-10 rounded-full border-2 border-dashed border-sky-400 animate-spin-regular" />
@@ -85,18 +96,18 @@ const Hero = () => {
                         {/* <div className="absolute inset-8 md:inset-10 bg-sky-200 rounded-full blur-3xl z-0" /> */}
 
                         {/* Image */}
-                        <div className="hidden lg:block">
-                            {/* <img 
+                        {/* <div className="hidden lg:block">
+                            <img 
                                 src="/images/hero-banner1.png" 
                                 // width={656}
                                 // height={800}
                                 className="relative z-10 w-[250px] h-[250px] md:w-[500px] md:h-[500px] mx-auto object-contain drop-shadow-2xl rounded-full -mt-5"
-                            /> */}
+                            />
                             <TiltCard 
                                 image={ActionFigure} 
                                 className = "relative z-10"
                             />
-                        </div>
+                        </div> */}
 
                         {/* <div className="absolute inset-8 md:inset-10 bg-sky-200 rounded-full blur-3xl z-1" /> */}
                 </div>
