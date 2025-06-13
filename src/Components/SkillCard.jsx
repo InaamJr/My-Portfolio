@@ -3,6 +3,7 @@
  */
 import PropTypes from "prop-types";
 
+
 const SkillCard = ({
     imgSrc,
     label,

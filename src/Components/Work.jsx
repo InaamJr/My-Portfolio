@@ -3,7 +3,7 @@
  */
 import ProjectCard from "./ProjectCard";
 
-const works = [
+export const works = [
   {
     imgSrc: '/images/RoyalGems.png',
     title: 'Royal Gems',
@@ -34,12 +34,12 @@ const works = [
     tags: ['C#', 'Management System', 'SQL'],
     projectLink: 'https://github.com/codewithsadee/anon-ecommerce-website'
   },
-  // {
-  //   imgSrc: '/images/project-6.jpg',
-  //   title: 'vCard Personal portfolio',
-  //   tags: ['Web-design', 'Development'],
-  //   projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
-  // },
+  {
+    imgSrc: '/images/VenomGuard.png',
+    title: 'VenomGuard AI',
+    tags: ['Python', 'Flask', 'AI', 'Machine Learning', 'NLP'],
+    projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
+  },
 ];
 
 const Work = () => {
@@ -51,7 +51,7 @@ const Work = () => {
       <div className="container">
 
         <h2 className="headline-2 mb-8 reveal-up">
-          My Portfolio Highlights
+          MY PORTFOLIO HIGHLIGHTS
         </h2>
 
         <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
