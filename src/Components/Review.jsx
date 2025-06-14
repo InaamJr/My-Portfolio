@@ -24,37 +24,37 @@ const reviews = [
     content: 'Exceptional web development! Delivered a seamless, responsive site with clean code and great UX.',
     name: 'Sophia Ramirez',
     imgSrc: '/images/people-1.jpg',
-    company: 'PixelForge'
-  },
-  {
-    content: 'Impressive work! Fast loading times, intuitive design, and flawless backend integration. Highly recommend.',
-    name: 'Ethan Caldwell',
-    imgSrc: '/images/people-2.jpg',
-    company: 'NexaWave'
+    company: 'Freelane Client (UAE)'
   },
   {
     content: 'Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.',
     name: 'Liam Bennett',
     imgSrc: '/images/people-3.jpg',
-    company: 'CodeCraft'
+    company: 'Freelane Client (Canada)'
+  },
+  {
+    content: 'Impressive work! Fast loading times, intuitive design, and flawless backend integration. Highly recommend.',
+    name: 'Rifky Azad',
+    imgSrc: '/images/Amiuriq2.png',
+    company: 'CEO Amiuriq (PVT) Ltd'
   },
   {
     content: 'Creative and skilled! Produced a modern, user-friendly site that exceeded expectations. Great communication.',
-    name: 'Noah Williams',
-    imgSrc: '/images/people-4.jpg',
-    company: 'BrightWeb'
+    name: 'Imran Janab',
+    imgSrc: '/images/RG2.png',
+    company: 'Royal Gems'
   },
   {
     content: 'Professional work! Delivered on time, with a polished design and smooth user experience. Top-notch developer.',
-    name: 'Ava Thompson',
-    imgSrc: '/images/people-5.jpg',
-    company: 'TechMosaic'
+    name: 'Rusiru Salwathura',
+    imgSrc: '/images/RS2.png',
+    company: 'Syntax Erreur'
   },
   {
     content: 'Excellent project execution! High-quality code, responsive design, and exceptional problem-solving skills.',
-    name: 'Jonathan',
+    name: 'Mahmood',
     imgSrc: '/images/people-6.jpg',
-    company: 'Skyline Digital'
+    company: 'Otelier'
   }
 ];
 

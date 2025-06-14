@@ -53,6 +53,9 @@ const Hero = () => {
                         <ButtonPrimary 
                             label="Download CV"
                             icon="download"
+                            href="/InaamAhamed-CV.pdf"
+                            target="_blank"
+                            classes="hover:shadow-lg"
                         />
 
                         <ButtonOutline 

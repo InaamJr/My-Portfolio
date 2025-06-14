@@ -6,7 +6,6 @@ import PropTypes from "prop-types"
 /**
  * Primary Button
  */
-
 const ButtonPrimary = ({
   href,
   target = '_self',
@@ -19,6 +18,7 @@ const ButtonPrimary = ({
       <a 
       href={href}
       target={target}
+      download
       className={"btn btn-primary " + classes}
       >
         {label}
@@ -59,7 +59,6 @@ ButtonPrimary.propTypes = {
 /**
  * Outline Button
  */
-
 const ButtonOutline = ({
   href,
   target = '_self',
