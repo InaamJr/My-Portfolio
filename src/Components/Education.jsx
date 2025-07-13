@@ -9,7 +9,7 @@ const Education = () => {
     >
       <div className="container">
 
-        <h2 className="headline-2 mb-8 reveal-up">
+        <h2 className="headline-2 reveal-up">
           MY JOURNEY
         </h2>
         
