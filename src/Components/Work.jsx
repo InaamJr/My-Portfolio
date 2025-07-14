@@ -18,7 +18,7 @@ export const Works = [
   },
   {
     imgSrc: '/images/FinAdvisor.png',
-    title: 'Financial Advisor Bot',
+    title: 'TradeSense AI (Financial Advisor)',
     tags: ['Python', 'Flask', 'yfinance', 'Q-Learning', 'React'],
     projectLink: 'https://github.com/InaamJr/financial-advisor-bot.git'
   },
