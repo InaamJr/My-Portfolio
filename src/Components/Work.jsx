@@ -8,7 +8,7 @@ export const Works = [
     imgSrc: '/images/VenomGuard.png',
     title: 'VenomGuard AI',
     tags: ['Python', 'Flask', 'AI', 'Machine Learning', 'NLP'],
-    projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
+    projectLink: 'https://github.com/InaamJr/VenomGuard-AI.git'
   },
   {
     imgSrc: '/images/GasByGas.png',
