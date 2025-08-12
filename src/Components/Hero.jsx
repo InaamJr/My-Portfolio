@@ -66,7 +66,7 @@ const Hero = () => {
                 </div>
 
                 {/* Right column — Visual Module (replaces <ThreeDCardDemo />) */}
-                <div className="hidden lg:flex items-center justify-center my-24">
+                <div className="hidden lg:flex items-center justify-center my-16">
                     <div className="relative mx-auto flex h-[28rem] w-[28rem] max-w-full items-center justify-center md:h-[32rem] md:w-[32rem]">
                         {/* ambient ring */}
                         <motion.div
