@@ -51,7 +51,7 @@ export const Timeline = ({
               <div className="flex-col hidden gap-2 text-xl font-bold md:flex md:pl-32 md:text-3xl text-zinc-300">
                 <h3>{item.date}</h3>
                 <h3 className="text-2xl text-zinc-400">{item.title}</h3>
-                <h3 className="text-2xl text-zinc-500">{item.institution}</h3>
+                <h3 className="text-lg text-zinc-500">{item.institution}</h3>
               </div>
             </div>
 

@@ -2,17 +2,16 @@
  * Components
  */
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Globe } from "lucide-react";
 import { ButtonPrimary, ButtonOutline } from "./Button";
-// import Spline from '@splinetool/react-spline';
-// import TiltCard from './TiltCard';
-// import ActionFigure from '/images/ActionFig1.2.png';
 import { Cover } from "./UI/cover";
-import { ThreeDCardDemo } from "./UI/3DCard"; 
 import { BackgroundBeams } from "./UI/background-beams";
 
 
 const Hero = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const location = "Colombo, Sri Lanka"; // <- change if needed
 
     useEffect(() => {
         // Set isVisible to true after the component mounts to trigger the animation
@@ -66,24 +65,65 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="hidden lg:block">
-                    {/* <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
-                        <img 
-                            src="/images/hero-banner1.png" 
-                            width={656}
-                            height={800}
-                            alt="Inaam Ahamed" 
-                            className="w-full" 
-                        /> 
-                    </figure> */}
-                    <ThreeDCardDemo />
+                {/* Right column — Visual Module (replaces <ThreeDCardDemo />) */}
+                <div className="hidden lg:flex items-center justify-center my-24">
+                    <div className="relative mx-auto flex h-[28rem] w-[28rem] max-w-full items-center justify-center md:h-[32rem] md:w-[32rem]">
+                        {/* ambient ring */}
+                        <motion.div
+                            aria-hidden
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0.95 }}
+                            transition={{ duration: 0.8 }}
+                            className="absolute inset-0 rounded-full border bg-gradient-to-b shadow-2xl backdrop-blur-xl border-white/10 from-white/10 to-white/0"
+                        />
 
-                    {/* Foreground TiltCard image */}
-                    {/* <TiltCard 
-                        image={ActionFigure} 
-                        className="relative z-10"
-                    /> */}
+                        {/* inner avatar placeholder */}
+                        <motion.div
+                            initial={{ y: 12, opacity: 0 }}
+                            animate={{ y: isVisible ? 0 : 12, opacity: isVisible ? 1 : 0 }}
+                            transition={{ duration: 0.6 }}
+                            className="relative z-10 grid h-80 w-80 place-items-center overflow-hidden rounded-full border bg-gradient-to-br shadow-lg border-white/10 from-neutral-900 to-neutral-800"
+                        >
+                            <img src="/images/hero1.jpg" alt="Inaam Ahamed" className="h-full w-full object-cover" />
+                        </motion.div>
+
+                        {/* floating badges */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -12, y: -12 }}
+                            animate={{ opacity: isVisible ? 1 : 0, x: 0, y: 0 }}
+                            transition={{ delay: 0.4 }}
+                            className="absolute -left-3 -top-3 rounded-xl border px-3 py-2 text-sm font-medium backdrop-blur-md border-white/10 bg-white/5"
+                        >
+                            <div className="flex items-center gap-2">
+                                <Globe className="h-3.5 w-3.5" /> {location}
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: 12, y: -12 }}
+                            animate={{ opacity: isVisible ? 1 : 0, x: 0, y: 0 }}
+                            transition={{ delay: 0.55 }}
+                            className="absolute -right-3 -top-3 rounded-xl border px-3 py-2 text-sm font-medium backdrop-blur-md border-white/10 bg-white/5"
+                        >
+                            Shipping AI‑powered products
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: 8, y: 12 }}
+                            animate={{ opacity: isVisible ? 1 : 0, x: 0, y: 0 }}
+                            transition={{ delay: 0.7 }}
+                            className="absolute -bottom-4 rounded-2xl border px-4 py-3 text-xs backdrop-blur-md border-white/10 bg-white/5"
+                        >
+                            <div className="flex items-center gap-6">
+                                <Metric label="Experience" value="2+ yrs" />
+                                <Metric label="Projects" value="25+" />
+                                <Metric label="Freelance Clients" value="12" />
+                            </div>
+                        </motion.div>
+                    </div>
                 </div>
+                
+                
             </div>
             <BackgroundBeams />
         </section>
@@ -91,3 +131,12 @@ const Hero = () => {
 }
 
 export default Hero
+
+function Metric({ label, value }) {
+    return (
+      <div className="min-w-[84px] text-left">
+        <div className="text-sm font-semibold">{value}</div>
+        <div className="text-[12px] text-neutral-400">{label}</div>
+      </div>
+    );
+  }
