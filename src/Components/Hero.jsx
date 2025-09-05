@@ -66,7 +66,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* Right column — Visual Module (replaces <ThreeDCardDemo />) */}
+                {/* Right column — Visual Module */}
                 <div className="hidden lg:flex items-center justify-center my-12">
                     <div className="relative mx-auto flex h-[28rem] w-[28rem] max-w-full items-center justify-center md:h-[32rem] md:w-[32rem]">
                         {/* ambient ring */}
@@ -85,7 +85,7 @@ const Hero = () => {
                             transition={{ duration: 0.6 }}
                             className="relative z-10 grid h-80 w-80 place-items-center overflow-hidden rounded-full border bg-gradient-to-br shadow-lg border-white/10 from-neutral-900 to-neutral-800"
                         >
-                            <img src="/images/hero1.jpg" alt="Inaam Ahamed" className="h-full w-full object-cover" />
+                            <img src="/images/hero4.png" alt="Inaam Ahamed" className="h-full w-full object-cover" />
                         </motion.div>
 
                         {/* floating badges */}
