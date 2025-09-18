@@ -85,7 +85,7 @@ const Hero = () => {
                             transition={{ duration: 0.6 }}
                             className="relative z-10 grid h-80 w-80 place-items-center overflow-hidden rounded-full border bg-gradient-to-br shadow-lg border-white/10 from-neutral-900 to-neutral-800"
                         >
-                            <img src="/images/hero4.png" alt="Inaam Ahamed" className="h-full w-full object-cover" />
+                            <img src="/images/Hero_5.png" alt="Inaam Ahamed" className="h-full w-full object-cover" />
                         </motion.div>
 
                         {/* floating badges */}
