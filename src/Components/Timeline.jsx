@@ -61,7 +61,7 @@ export const Timeline = ({
                 <h3>{item.title}</h3>
               </div>
               {item.contents.map((content, index) => (
-                <p className="mb-3 text-sm font-normal text-zinc-400" key={index}>{content}</p>
+                <p className="mb-3 text-sm font-thin text-zinc-400" key={index}>{content}</p>
               ))}
             </div>
           </div>

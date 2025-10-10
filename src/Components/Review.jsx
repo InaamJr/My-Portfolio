@@ -80,7 +80,7 @@ const Review = () => {
     >
         <div className="container">
             <h2 className="headline-2 mb-8 reveal-up">
-                What People Say
+                WHAT PEOPLE SAY
             </h2>
             <div className="scrub-slide flex items-stretch gap-3 w-fit">
               {reviews.map(({content, name, imgSrc, company}, key) => (

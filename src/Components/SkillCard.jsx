@@ -24,7 +24,7 @@ const SkillCard = ({
         <div>
             <h3>{label}</h3>
 
-            <p className="text-zinc-400 text-sm">
+            <p className="text-zinc-400 text-sm font-extralight">
                 {desc}
             </p>
         </div>

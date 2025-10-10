@@ -28,7 +28,7 @@ const ReviewCard = ({
             ))}
         </div>
 
-        <p className="text-zinc-400 mb-8">
+        <p className="text-zinc-400 font-thin mb-8">
             {content}
         </p>
 

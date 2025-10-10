@@ -13,7 +13,7 @@ const Education = () => {
           MY JOURNEY
         </h2>
         
-        <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] reveal-up">
+        <p className="text-zinc-400 font-thin mt-3 mb-8 max-w-[50ch] reveal-up">
           A timeline of my academic journey, showcasing my dedication to software engineering and continuous learning.
         </p>
           

@@ -34,7 +34,7 @@ const ProjectCard = ({
                     {tags.map((label, key) => (
                         <span 
                             key={key}
-                            className="h-8 text-sm text-zinc-400 bg-zinc-50/5 grid items-center px-3 rounded-lg"
+                            className="h-8 text-sm font-extralight text-zinc-400 bg-zinc-50/5 grid items-center px-3 rounded-lg"
                         >
                             {label}
                         </span>

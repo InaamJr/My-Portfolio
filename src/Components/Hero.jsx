@@ -37,7 +37,7 @@ const Hero = () => {
                             />
                         </figure>
 
-                        <div className="flex items-center gap-3 text-zinc-400 text-sm tracking-wide">
+                        <div className="flex items-center gap-3 text-zinc-400 text-sm font-thin tracking-wide">
                             <span className="relative w-2 h-2 rounded-full bg-emerald-400">
                                 <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
                             </span>
@@ -46,14 +46,14 @@ const Hero = () => {
                     </div>
 
                     <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[16ch] mt-5 mb-8 lg:mb-10 relative">
-                        Building Digital Experiences with <Cover>Passion</Cover>
+                        Building Digital Experiences with <Cover>PASSION</Cover>
                     </h2>
 
                     <div className="flex items-center gap-3">
                         <ButtonPrimary 
                             label="Download CV"
                             icon="download"
-                            href="/InaamAhamed-CV.pdf"
+                            href="/InaamAhamedCV.pdf"
                             target="_blank"
                             classes="hover:shadow-lg"
                         />
@@ -68,7 +68,7 @@ const Hero = () => {
 
                 {/* Right column — Visual Module */}
                 <div className="hidden lg:flex items-center justify-center my-12">
-                    <div className="relative mx-auto flex h-[28rem] w-[28rem] max-w-full items-center justify-center md:h-[32rem] md:w-[32rem]">
+                    <div className="relative mx-auto flex h-[28rem] w-[28rem] max-w-full items-center justify-center md:h-[30rem] md:w-[30rem]">
                         {/* ambient ring */}
                         <motion.div
                             aria-hidden

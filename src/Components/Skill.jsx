@@ -5,9 +5,9 @@ import SkillCard from "./SkillCard";
 
 const skillItem = [
   {
-    imgSrc: '/images/python.svg',
-    label: 'Python',
-    desc: 'Artificial Intelligence'
+    imgSrc: '/images/react.svg',
+    label: 'React',
+    desc: 'Framework'
   },
   {
     imgSrc: '/images/javascript.svg',
@@ -15,9 +15,9 @@ const skillItem = [
     desc: 'Interaction'
   },
   {
-    imgSrc: '/images/react.svg',
-    label: 'React',
-    desc: 'Framework'
+    imgSrc: '/images/typescript.svg',
+    label: 'TypeScript',
+    desc: 'Type-Safe Scripting'
   },
   {
     imgSrc: '/images/nxtjs.svg',
@@ -25,14 +25,19 @@ const skillItem = [
     desc: 'Framework'
   },
   {
+    imgSrc: '/images/tailwindcss.svg',
+    label: 'TailwindCSS',
+    desc: 'User Interface'
+  },
+  {
     imgSrc: '/images/css3.svg',
     label: 'CSS',
     desc: 'User Interface'
   },
   {
-    imgSrc: '/images/tailwindcss.svg',
-    label: 'TailwindCSS',
-    desc: 'User Interface'
+    imgSrc: '/images/python.svg',
+    label: 'Python',
+    desc: 'Artificial Intelligence'
   },
   {
     imgSrc: '/images/nodejs.svg',
@@ -65,30 +70,28 @@ const Skill = () => {
   return (
     <section className="section">
         <div className="container">
+          <h2 className="headline-2 reveal-up">
+              ESSENTIAL TOOLS I USE
+          </h2>
 
-            <h2 className="headline-2 reveal-up">
-                Essential Tools I Use
-            </h2>
+          <p className="text-zinc-400 font-thin mt-3 mb-8 max-w-[50ch] reveal-up">
+              Explore the cutting-edge tools and technologies I harness to build exceptional, high-performing websites & applications.
+          </p>
 
-            <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] reveal-up">
-                Explore the cutting-edge tools and technologies I harness to build exceptional, high-performing websites & applications.
-            </p>
-
-            <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
-                {
-                    skillItem.map(({ imgSrc, label, desc }, Key) => 
-                    (
-                        <SkillCard 
-                            key={Key}
-                            imgSrc={imgSrc}
-                            label={label}
-                            desc={desc}
-                            classes="reveal-up"
-                        />
-                    ))
-                }
-            </div>
-
+          <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
+              {
+                  skillItem.map(({ imgSrc, label, desc }, Key) => 
+                  (
+                      <SkillCard 
+                          key={Key}
+                          imgSrc={imgSrc}
+                          label={label}
+                          desc={desc}
+                          classes="reveal-up"
+                      />
+                  ))
+              }
+          </div>
         </div>
     </section>
   )
