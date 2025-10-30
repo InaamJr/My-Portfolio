@@ -125,7 +125,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* <div className="absolute bottom-14 right-10 z-30">
+            <div className="hidden lg:flex absolute bottom-5 right-10 z-30">
                 <div className="relative w-20 h-20 flex items-center justify-center">
                     <PulsingBorder
                         colors={["#06b6d4", "#0891b2", "#f97316", "#00FF88", "#FFD700", "#FF6B35", "#ffffff"]}
@@ -148,10 +148,10 @@ const Hero = () => {
                         height: "60px",
                         borderRadius: "50%",
                         }}
-                    /> */}
+                    />
 
                     {/* Rotating Text Around the Pulsing Border */}
-                    {/* <motion.svg
+                    <motion.svg
                         className="absolute inset-0 w-full h-full"
                         viewBox="0 0 100 100"
                         animate={{ rotate: 360 }}
@@ -167,12 +167,12 @@ const Hero = () => {
                         </defs>
                         <text className="text-sm fill-white/80 font-medium">
                             <textPath href="#circle" startOffset="0%">
-                                Inaam Ahamed • Full-Stack Dev • Full-Stack Dev • Inaam Ahamed •
+                                • CODE • GRIND • COFFEE • REPEAT •
                             </textPath>
                         </text>
                     </motion.svg>
                 </div>
-            </div> */}
+            </div>
 
             <BackgroundBeams />
         </section>
