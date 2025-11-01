@@ -167,7 +167,7 @@ const Hero = () => {
                         </defs>
                         <text className="text-sm fill-white/80 font-medium">
                             <textPath href="#circle" startOffset="0%">
-                                • CODE • GRIND • COFFEE • REPEAT •
+                                • REPEAT • CODE • GRIND • COFFEE • 
                             </textPath>
                         </text>
                     </motion.svg>
