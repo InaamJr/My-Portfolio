@@ -8,6 +8,9 @@ const Education = () => {
       className="section"
     >
       <div className="container">
+        <p className="mb-6 font-mono text-xs tracking-[0.35em] text-zinc-400/80 uppercase reveal-up">
+          Education
+        </p>
 
         <h2 className="headline-2 reveal-up">
           MY JOURNEY

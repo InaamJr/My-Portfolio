@@ -14,7 +14,10 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40">
-      <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]">
+      <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr] font-mono">
+        {/* <div className="flex items-center justify-between gap-4 text-xs font-mono uppercase tracking-[0.24em] text-neutral-400">
+            <span className="text-[1.25rem]">jr.dev</span>
+        </div> */}
 
         <h1>
           <a 

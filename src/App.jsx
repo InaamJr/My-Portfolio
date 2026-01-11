@@ -18,7 +18,8 @@ gsap.registerPlugin(useGSAP, ScrollTrigger); // register the hook to avoid React
  */
 import LoadingScreen from "./Components/LoadingScreen";
 import Header from "./Components/Header";
-import Hero from "./Components/Hero";
+// import Hero from "./Components/Hero";
+import HeroV2 from "./Components/HeroV2";
 import About from "./Components/About";
 import Education from "./Components/Education";
 import Skill from "./Components/Skill";
@@ -57,25 +58,27 @@ const App = () => {
     return (
         <ReactLenis root>
             {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
-            <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
-                <Header />
-                <main>
-                    {/* Gradient image */}
-                    {/* <img className='absolute top-0 right-0 opacity-60 -z-10' src='/images/gradient.png' alt='Gradient-img'/> */}
 
-                    {/* Blur Effect */}
-                    {/* <div className='h-0 w-[40rem] absolute top-[20%] right-[-5%] shadow-[0_0_900px_20px_#63dce9] -rotate-[30deg] -z-10'></div> */}
+                <div className={`w-full h-full transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
+                    <Header />
+                    <main className='p-0 m-0'>
+                        {/* Gradient image */}
+                        {/* <img className='absolute top-0 right-0 opacity-60 -z-10' src='/images/gradient.png' alt='Gradient-img'/> */}
 
-                    <Hero />
-                    <About />
-                    <Skill />
-                    <Education />
-                    <Work />
-                    <Review />
-                    <Contact />
-                </main>
-                <Footer />
-            </div>
+                        {/* Blur Effect */}
+                        {/* <div className='h-0 w-[40rem] absolute top-[20%] right-[-5%] shadow-[0_0_900px_20px_#63dce9] -rotate-[30deg] -z-10'></div> */}
+
+                        <HeroV2 />
+                        <About />
+                        <Skill />
+                        <Education />
+                        <Work />
+                        <Review />
+                        <Contact />
+                    </main>
+                    <Footer />
+                </div>
+
         </ReactLenis>
     )
 }

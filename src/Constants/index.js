@@ -1,12 +1,21 @@
 export const education = [
   {
+    title: "MSc in Data Science and Artificial Intelligence",
+    institution: "Middlesex University Dubai ",
+    date: "2026 – Present",
+    contents: [
+      "✅ Commencing postgraduate studies focused on data science, machine learning, artificial intelligence, and advanced analytics.",
+      "✅ Expected to develop expertise in Python, statistical modeling, data-driven decision-making, and AI system development.",
+    ],
+  },
+  {
     title: "BEng (Hons) in Software Engineering",
     institution: "London Metropolitan University",
     date: "2024 – 2025",
     contents: [
       "✅ Pursuing a comprehensive curriculum covering full-stack development, AI, software architecture, and project management.",
       "✅ Completed hands-on projects in Python, C#, React, .NET, and Java applying industry practices and agile methodologies.",
-      "✅ Led the final year research project on AI-driven Venomous Species Detection, enhancing skills in machine learning and data analysis.",
+      // "✅ Led the final year research project on AI-driven Venomous Species Detection, enhancing skills in machine learning and data analysis.",
     ],
   },
   {

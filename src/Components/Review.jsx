@@ -10,8 +10,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 
-
-
 /**
  * Register GSAP plugins
  */
@@ -77,20 +75,23 @@ const Review = () => {
         className="section overflow-hidden pb-20" 
     >
         <div className="container">
-            <h2 className="headline-2 mb-8 reveal-up">
-                WHAT PEOPLE SAY
-            </h2>
-            <div className="scrub-slide flex items-stretch gap-3 w-fit">
-              {reviews.map(({content, name, imgSrc, company}, key) => (
-                <ReviewCard 
-                  key={key}
-                  name={name}
-                  imgSrc={imgSrc}
-                  company={company}
-                  content={content}
-                />
-              ))}
-            </div>
+          <p className="mb-6 font-mono text-xs tracking-[0.35em] text-zinc-400/80 uppercase reveal-up">
+              Testimonial
+          </p>
+          <h2 className="headline-2 mb-8 reveal-up">
+            WHAT PEOPLE SAY
+          </h2>
+          <div className="scrub-slide flex items-stretch gap-3 w-fit">
+            {reviews.map(({content, name, imgSrc, company}, key) => (
+              <ReviewCard 
+                key={key}
+                name={name}
+                imgSrc={imgSrc}
+                company={company}
+                content={content}
+              />
+            ))}
+          </div>
         </div>
     </section>
   )
