@@ -188,4 +188,4 @@ function Metric({ label, value }) {
         <div className="text-[12px] text-neutral-400">{label}</div>
       </div>
     );
-  }
+}

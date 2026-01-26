@@ -19,7 +19,8 @@ gsap.registerPlugin(useGSAP, ScrollTrigger); // register the hook to avoid React
 import LoadingScreen from "./Components/LoadingScreen";
 import Header from "./Components/Header";
 // import Hero from "./Components/Hero";
-import HeroV2 from "./Components/HeroV2";
+// import HeroV2 from "./Components/HeroV2";
+import HeroV3 from "./Components/HeroV3";
 import About from "./Components/About";
 import Education from "./Components/Education";
 import Skill from "./Components/Skill";
@@ -68,7 +69,8 @@ const App = () => {
                         {/* Blur Effect */}
                         {/* <div className='h-0 w-[40rem] absolute top-[20%] right-[-5%] shadow-[0_0_900px_20px_#63dce9] -rotate-[30deg] -z-10'></div> */}
 
-                        <HeroV2 />
+                        {/* <HeroV2 /> */}
+                        <HeroV3 />
                         <About />
                         <Skill />
                         <Education />
