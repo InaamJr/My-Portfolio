@@ -5,6 +5,13 @@ import ProjectCard from "./ProjectCard";
 
 export const Works = [
   {
+    imgSrc: "/images/HRFlow.png",
+    title: "HRFlow AI",
+    tags: ["LLM", "RAG", "AI", "Semantic Search"],
+    projectLink: "https://github.com/InaamJr/hrflow-ai.git",
+    accent: "from-fuchsia-400/20 via-purple-400/10 to-transparent",
+  },
+  {
     imgSrc: "/images/VenomGuard.png",
     title: "VenomGuard AI",
     tags: ["Python", "Flask", "AI", "Machine Learning", "NLP"],
@@ -61,12 +68,12 @@ const Work = () => {
             <h2 className="headline-2 mt-3 reveal-up">PORTFOLIO HIGHLIGHTS</h2>
           </div>
 
-          <div className="hidden md:flex items-center gap-2 text-xs text-zinc-400 reveal-up">
+          {/* <div className="hidden md:flex items-center gap-2 text-xs text-zinc-400 reveal-up">
             <span className="font-mono inline-flex items-center gap-2 px-3 py-2 rounded-full ring-1 ring-inset ring-zinc-800/70 bg-zinc-950/40">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400" />
               Minimal • Futuristic • Modern
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Grid */}
